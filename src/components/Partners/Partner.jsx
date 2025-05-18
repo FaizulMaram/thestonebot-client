@@ -1,10 +1,10 @@
 import React from "react";
 import "./Partner.css";
-import PartnerPic1 from "../../assets/img/partners/Partner-1.png";
-import PartnerPic2 from "../../assets/img/partners/Partner-2.png";
-import PartnerPic3 from "../../assets/img/partners/Partner-3.png";
-import PartnerPic4 from "../../assets/img/partners/Partner-4.png";
-import PartnerPic5 from "../../assets/img/partners/Partner-5.png";
+import PartnerPic1 from "../../assets/img/partners/partner-1.png";
+import PartnerPic2 from "../../assets/img/partners/partner-2.png";
+import PartnerPic3 from "../../assets/img/partners/partner-3.png";
+import PartnerPic4 from "../../assets/img/partners/partner-4.png";
+import PartnerPic5 from "../../assets/img/partners/partner-5.png";
 
 const awardsData = [
   { img: PartnerPic1, alt: "PC Indie Pitch Winner 2019" },
