@@ -1,0 +1,40 @@
+.awards-container {
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+.awards-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(130px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.award-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.award-item img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.award-item img:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,92 @@
+.hero-main {
+  position: relative;
+  width: 100vw;
+  min-height: calc(100vh - 130px);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 130px);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.background-video video {
+  width: 100vw;
+  height: calc(100vh - 130px);
+  object-fit: cover;
+}
+
+.background-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 130px);
+  background: rgba(255, 255, 255, 0.1); /* Overlay with 50% opacity */
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 130px);
+}
+
+.hero-card-main {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-card {
+  background: #ffffffbf; /* Semi-transparent background */
+  padding: 60px;
+  margin: 50px 20px 50px 0px;
+  min-width: 450px;
+  max-width: 500px;
+  backdrop-filter: blur(1px);
+  transition: transform 0.2s;
+  border-radius: 5px;
+}
+
+.hero-card-content h1 {
+  color: #000000;
+  font-size: 42px;
+  margin-bottom: 1rem;
+}
+
+.hero-card-content p {
+  color: #000000;
+  font-size: 16px;
+  margin-bottom: 5rem;
+}
+
+.hero-card-content a {
+  position: absolute;
+  bottom: 50px;
+  color: #fff;
+  background: #000000;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+  border-radius: 2px;
+}
+
+.hero-card-content a:hover {
+  background: #383838c5;
+}

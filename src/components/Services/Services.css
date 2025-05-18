@@ -1,0 +1,126 @@
+.services__container h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fffefd;
+}
+.services__container {
+  margin-top: 60px;
+}
+.service__item {
+  position: relative;
+  background: #23262f;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.service__item img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 38, 47, 0.7);
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1; /* Behind content and button */
+  pointer-events: none;
+}
+
+.service__item:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 24px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s,
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.3s;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.service__item:hover img {
+  filter: blur(2px) brightness(0.7);
+}
+
+.service__item:hover .service__content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.service__tags {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.service__tags span {
+  color: #ffffff;
+  font-size: 0.85rem;
+  border-radius: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.service__text h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 16px 0;
+  color: #fff;
+}
+
+.service__button {
+  margin-top: 12px;
+  align-self: flex-end;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.6s,
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.6s;
+  z-index: 3;
+}
+
+.service__item:hover .service__button {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.service__button a {
+  font-size: 20px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  color: #fff;
+}
+
+.service__button a:hover {
+  transform: scale(1.05);
+}
+
+.service_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+}
