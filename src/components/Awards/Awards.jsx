@@ -33,26 +33,12 @@ const awardsData = [
   { img: AwardsPic14, alt: "Game On Ventures Official Selection 2016" },
 ];
 
-// const totalItems = awardsData.length;
-// const blankCellIndex = totalItems - 2;
-
 const Awards = () => {
   return (
     <div className="awards-container">
       <h2 className="awards-title">Awards</h2>
       <div className="awards_grid">
         {awardsData.map((award, index) => {
-          // Insert blank cell just before the 3rd last item
-          // if (index === blankCellIndex) {
-          //   return (
-          //     <React.Fragment key={index}>
-          //       <div className="award-item blank-cell" />
-          //       <div className="award-item">
-          //         <img src={award.img} alt={award.alt} />
-          //       </div>
-          //     </React.Fragment>
-          //   );
-          // }
           return (
             <div className="award-item" key={index}>
               <img src={award.img} alt={award.alt} />
