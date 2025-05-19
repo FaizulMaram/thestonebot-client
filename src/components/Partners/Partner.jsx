@@ -17,7 +17,7 @@ const awardsData = [
 const Partner = () => {
   return (
     <div className="awards-container">
-      <h2 className="awards-title">Awards</h2>
+      <h2 className="awards-title">Our Partners</h2>
       <div className="awards-grid">
         {awardsData.map((award, index) => {
           return (

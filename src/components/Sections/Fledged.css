@@ -23,7 +23,7 @@
 .fledged-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
 }
@@ -113,4 +113,26 @@
 
 .fledged-picture img {
   width: 100%;
+}
+
+.fledged-section-one {
+  flex-direction: column-reverse;
+}
+
+@media (max-width: 768px) {
+  .fledged-section {
+    flex-direction: column;
+  }
+
+  .fledged-text,
+  .fledged-text-2 {
+    max-width: 100%;
+    margin: 0;
+  }
+  .fledged-picture {
+    min-width: 100%;
+  }
+  .fledged-content {
+    margin-bottom: 3rem;
+  }
 }

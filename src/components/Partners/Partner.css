@@ -1,24 +1,27 @@
 .awards-container {
-  padding: 0 20px;
+  padding: 0 15px;
   text-align: center;
   position: relative;
   color: white;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .awards-title {
-  font-size: 3rem;
-  margin-bottom: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
   font-weight: bold;
 }
 
-.awards-grid {
+.awards_grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(130px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
   justify-content: center;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
   margin-bottom: 3rem;
 }
 
@@ -26,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
 }
 
 .award-item img {
@@ -35,6 +39,85 @@
   transition: transform 0.3s ease;
 }
 
-.award-item img:hover {
-  transform: scale(1.05);
+@media (hover: hover) {
+  .award-item img:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1200px) {
+  .awards_grid {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .awards-title {
+    font-size: 2.25rem;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .awards_grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  .awards-title {
+    font-size: 2rem;
+  }
+
+  .award-item img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .awards-container {
+    padding: 0 10px;
+  }
+
+  .awards_grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .awards-title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+  }
+
+  .award-item {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .awards_grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .awards-title {
+    font-size: 1.5rem;
+  }
+
+  .award-item img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 400px) {
+  .awards_grid {
+    padding: 0;
+  }
+
+  .award-item {
+    padding: 5px;
+  }
+
+  .award-item img {
+    max-width: 100%;
+  }
 }

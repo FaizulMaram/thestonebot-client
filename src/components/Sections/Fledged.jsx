@@ -10,7 +10,7 @@ const Fledged = () => {
       <h2 className="fledged-title">Our Full-Fledged Games</h2>
       <div className="fledged-container">
         <div className="fledged-section">
-          <div className="fledged-content">
+          <div className="fledged-content fledged-section-one">
             <div className="fledged-text">
               <h3 className="fledged-section-title">The Last Friend</h3>
               <p className="fledged-section-text">
