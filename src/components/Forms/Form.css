@@ -58,3 +58,18 @@ button:hover {
 .required {
   color: red;
 }
+
+@media (max-width: 768px) {
+  .form-container {
+    max-width: 90%;
+    padding: 20px;
+    margin: 10px;
+  }
+  .form-title h2 {
+    font-size: 20px;
+  }
+  input,
+  textarea {
+    font-size: 14px;
+  }
+}

@@ -1,49 +1,134 @@
 .testimonial-slider-wrapper {
   background-color: #f8f2f4;
-  padding: 60px 20px;
+  padding: 4rem 1rem;
   text-align: center;
 }
 
 .testimonial-slider-wrapper h2 {
-  font-size: 24px;
-  margin-bottom: 40px;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
   color: #333;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  padding: 0 1rem;
 }
 
 .testimonial-card {
   max-width: 700px;
   margin: 0 auto;
-  padding: 30px 40px;
-  border-radius: 16px;
-  transition: all 0.3s ease;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 
 .testimonial-quote {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #444;
   font-style: italic;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
 .testimonial-name {
-  font-weight: bold;
+  font-weight: 600;
   color: #111;
-  font-size: 16px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .testimonial-source {
-  font-size: 14px;
-  color: #888;
+  font-size: 0.875rem;
+  color: #666;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.testimonial-source:hover {
+  color: #222;
+}
+
+/* Slider Dots */
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li {
+  margin: 0 3px;
 }
 
 .slick-dots li button:before {
   color: #999;
-  font-size: 12px;
+  font-size: 10px;
+  opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
   color: #222;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .testimonial-slider-wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .testimonial-slider-wrapper h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+    margin: 0 -1rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-name {
+    font-size: 0.875rem;
+  }
+
+  .testimonial-source {
+    font-size: 0.75rem;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-slider-wrapper {
+    padding: 2rem 0.5rem;
+  }
+
+  .testimonial-slider-wrapper h2 {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    padding: 0 0.5rem;
+  }
+
+  .testimonial-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .testimonial-quote {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .slick-dots li button:before {
+    font-size: 8px;
+  }
+}
+
+/* Mobile hover states */
+@media (hover: none) {
+  .testimonial-source:hover {
+    color: #666;
+  }
 }

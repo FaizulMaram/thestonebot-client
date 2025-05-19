@@ -111,3 +111,18 @@ h1 {
 .project_background {
   background-color: #02010180;
 }
+
+@media (max-width: 768px) {
+  .project-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  .project_background {
+    color: #fff;
+  }
+  .grid,
+  .grid-two {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

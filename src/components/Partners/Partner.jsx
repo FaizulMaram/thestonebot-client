@@ -18,10 +18,10 @@ const Partner = () => {
   return (
     <div className="awards-container">
       <h2 className="awards-title">Our Partners</h2>
-      <div className="awards-grid">
+      <div className="partners-grid">
         {awardsData.map((award, index) => {
           return (
-            <div className="award-item" key={index}>
+            <div className="partner-item" key={index}>
               <img src={award.img} alt={award.alt} />
             </div>
           );

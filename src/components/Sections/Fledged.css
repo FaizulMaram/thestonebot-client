@@ -115,10 +115,6 @@
   width: 100%;
 }
 
-.fledged-section-one {
-  flex-direction: column-reverse;
-}
-
 @media (max-width: 768px) {
   .fledged-section {
     flex-direction: column;
@@ -134,5 +130,8 @@
   }
   .fledged-content {
     margin-bottom: 3rem;
+  }
+  .fledged-section-one {
+    flex-direction: column-reverse;
   }
 }

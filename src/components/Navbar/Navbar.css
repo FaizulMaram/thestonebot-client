@@ -130,7 +130,7 @@
 
   .nav__links {
     position: fixed;
-    top: 100px !important;
+    top: 100px;
     left: -100%;
     width: 100%;
     height: calc(100vh - 100px);
@@ -230,4 +230,8 @@
     top: 80px; /* Match your mobile navbar height */
     height: calc(100vh - 80px);
   }
+}
+
+.menu-toggle {
+  background-color: transparent;
 }
